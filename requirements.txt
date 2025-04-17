@@ -3,3 +3,4 @@ chromadb>=1.0.5
 sentence-transformers
 transformers
 torch
+sqlite3 >= 3.35.0
