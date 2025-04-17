@@ -1,6 +1,5 @@
 streamlit
-chromadb>=1.0.5
+chromadb>=0.4.24
 sentence-transformers
 transformers
 torch
-sqlite3 >= 3.35.0
