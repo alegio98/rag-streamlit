@@ -2,6 +2,7 @@ import streamlit as st
 from sentence_transformers import SentenceTransformer
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 import chromadb
+from chromadb.config import Settings
 import torch
 
 st.set_page_config(page_title="RAG Chatbot", page_icon="🤖", layout="wide")
@@ -24,8 +25,12 @@ def load_models():
 embedder, rag_chat = load_models()
 
 # --- CHROMA DB SETUP ---
+#client = chromadb.PersistentClient(path="./vectorstore")
+
+#collection = client.get_or_create_collection("insiel_chunks")
+
 client = chromadb.PersistentClient(path="./vectorstore")
-collection = client.get_or_create_collection("insiel_chunks")
+collection = client.get_or_create_collection(name="insiel_chunks")
 
 # --- FUNZIONE DI RISPOSTA ---
 
