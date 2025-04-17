@@ -1,5 +1,5 @@
 streamlit
-chromadb>=0.4.24
+chromadb>=3.35.0
 sentence-transformers
 transformers
 torch
