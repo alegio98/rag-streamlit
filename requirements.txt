@@ -1,6 +1,5 @@
 streamlit
 chromadb>=0.4.24
-duckdb
 sentence-transformers
 transformers
-torch==2.0.1+cpu
+torch
